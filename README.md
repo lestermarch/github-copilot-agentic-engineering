@@ -8,7 +8,7 @@ A practical GitHub Copilot enablement deck that helps software professionals mov
 - **PDF:** [View or download](assets/from-coding-assistance-to-agentic-engineering.pdf)
 - **PowerPoint:** [Download the editable source](assets/from-coding-assistance-to-agentic-engineering.pptx)
 
-Use the arrow keys or on-screen controls to navigate the web presentation. Press <kbd>S</kbd> to open speaker view.
+Use the labelled **Previous** and **Next** buttons, arrow keys, or reveal.js controls to navigate the web presentation. Press <kbd>S</kbd> to open speaker view.
 On a small screen, tap a slide to open the full-resolution image for zooming.
 
 ## What the asset does

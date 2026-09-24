@@ -36,3 +36,20 @@ const deck = new Reveal({
 
 await deck.initialize();
 globalThis.revealDeck = deck;
+
+const previousButton = document.querySelector("#previous-slide");
+const nextButton = document.querySelector("#next-slide");
+const slideCounter = document.querySelector("#slide-counter");
+const slideCount = deck.getSlides().length;
+
+function updateNavigation() {
+  const currentIndex = deck.getSlidePastCount();
+  previousButton.disabled = currentIndex === 0;
+  nextButton.disabled = currentIndex === slideCount - 1;
+  slideCounter.textContent = `${currentIndex + 1} / ${slideCount}`;
+}
+
+previousButton.addEventListener("click", () => deck.prev());
+nextButton.addEventListener("click", () => deck.next());
+deck.on("slidechanged", updateNavigation);
+updateNavigation();
