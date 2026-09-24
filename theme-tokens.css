@@ -1,0 +1,49 @@
+:root {
+  --color-surface: #050b18;
+  --color-surface-alt: #0d1730;
+  --color-text: #ffffff;
+  --color-text-muted: #c7d0e3;
+  --color-accent: #4f7cff;
+  --color-accent-contrast: #ffffff;
+  --color-link: #ffffff;
+  --color-link-hover: #ffffff;
+
+  --space-xs: 0.35rem;
+  --space-sm: 0.7rem;
+  --space-md: 1.4rem;
+  --space-lg: 2.1rem;
+  --space-xl: 3.5rem;
+
+  --focus-ring-color: #7ea2ff;
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 2px;
+
+  --overlay-scrim: rgba(5, 11, 24, 0.82);
+  --overlay-border: rgba(255, 255, 255, 0.18);
+  --slide-border: rgba(255, 255, 255, 0.1);
+  --slide-shadow: rgba(0, 0, 0, 0.45);
+}
+
+.reveal {
+  --r-background-color: var(--color-surface);
+  --r-main-color: var(--color-text);
+  --r-link-color: var(--color-link);
+  --r-link-color-hover: var(--color-link-hover);
+  --r-selection-background-color: var(--color-accent);
+  --r-selection-color: var(--color-accent-contrast);
+}
+
+.reveal a:focus-visible,
+.reveal button:focus-visible,
+.reveal [tabindex]:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

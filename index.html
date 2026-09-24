@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GitHub Copilot enablement deck: from coding assistance to agentic engineering."
+    />
+    <title>GitHub Copilot: From Coding Assistance to Agentic Engineering</title>
+  </head>
+  <body>
+    <nav class="asset-links" aria-label="Presentation downloads">
+      <a
+        id="pdf-download"
+        href="./assets/from-coding-assistance-to-agentic-engineering.pdf"
+        download="from-coding-assistance-to-agentic-engineering.pdf"
+      >PDF</a>
+      <a
+        id="pptx-download"
+        href="./assets/from-coding-assistance-to-agentic-engineering.pptx"
+        download="from-coding-assistance-to-agentic-engineering.pptx"
+      >PowerPoint</a>
+      <a href="https://github.com/lestermarch/github-copilot-agentic-engineering">GitHub</a>
+    </nav>
+
+    <div class="reveal" aria-label="GitHub Copilot presentation">
+      <div class="slides">
+        <section id="opening">
+          <h1 class="sr-only">From Coding Assistance to Agentic Engineering</h1>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-01.png" alt="Title slide: GitHub Copilot, From coding assistance to agentic engineering." />
+            <figcaption class="sr-only">The learning journey covers Assist, Ground, Delegate, Customize, Govern, and Specify.</figcaption>
+          </figure>
+          <aside class="notes">Introduce the session as a practical progression from inline assistance to governed agentic engineering.</aside>
+        </section>
+
+        <section id="current-state">
+          <h2 class="sr-only">Where are you today?</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-02.png" alt="Audience poll ranging from never using GitHub Copilot to customizing agent tooling." />
+            <figcaption class="sr-only">The goal is to move one step forward, using the least complex workflow that solves the task.</figcaption>
+          </figure>
+          <aside class="notes">Calibrate the room. Emphasize that progress does not require adopting every feature.</aside>
+        </section>
+
+        <section id="capability-layers">
+          <h2 class="sr-only">One product, three capability layers</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-03.png" alt="Three GitHub Copilot capability layers: assistive, agentic, and agent customization." />
+            <figcaption class="sr-only">Assistive experiences suggest and explain, agents plan and execute, and customization supplies context, tools, and controls.</figcaption>
+          </figure>
+          <aside class="notes">Distinguish synchronous help, delegated execution, and the customization needed to fit a team and codebase.</aside>
+        </section>
+
+        <section id="model-harness-tools">
+          <h2 class="sr-only">Model, harness, tools, and controls</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-04.png" alt="Diagram distinguishing the model, harness, tools, and controls in an agent loop." />
+            <figcaption class="sr-only">The model reasons, the harness manages context and actions, tools perform work, and controls govern execution.</figcaption>
+          </figure>
+          <aside class="notes">Explain that where the harness runs is separate from where the model runs.</aside>
+        </section>
+
+        <section id="model-selection">
+          <h2 class="sr-only">Which model? Start with Auto</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-05.png" alt="Guidance to start with automatic model selection and choose manually only for a clear reason." />
+            <figcaption class="sr-only">Manual selection is useful for known hard tasks, repeatability, policy, latency, context, or tool support.</figcaption>
+          </figure>
+          <aside class="notes">Position Auto as the default and manual routing as an intentional exception.</aside>
+        </section>
+
+        <section id="choose-the-surface">
+          <h2 class="sr-only">Choose the surface by where work should happen</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-06.png" alt="Comparison of GitHub Copilot surfaces for cursor, codebase, terminal, GitHub, and parallel workstreams." />
+            <figcaption class="sr-only">Choose the surface based on where the work should happen, not which product appears most capable.</figcaption>
+          </figure>
+          <aside class="notes">Use the priority-filtering example to show how the same task changes across harnesses.</aside>
+        </section>
+
+        <section id="task-definition">
+          <h2 class="sr-only">Better prompts are better task definitions</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-07.png" alt="Weak and strong prompt comparison using goal, context, constraints, examples, and acceptance checks." />
+            <figcaption class="sr-only">Better prompts are better task definitions grounded in files, tests, history, and tools.</figcaption>
+          </figure>
+          <aside class="notes">Read the strong prompt as an executable task definition rather than prose crafted for an AI.</aside>
+        </section>
+
+        <section id="context-shortcuts">
+          <h2 class="sr-only">Context shortcuts worth learning</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-08.png" alt="Useful GitHub Copilot IDE and CLI context shortcuts and discovery commands." />
+            <figcaption class="sr-only">Commands vary between surfaces; slash, at-sign, and help discovery are authoritative.</figcaption>
+          </figure>
+          <aside class="notes">Encourage participants to discover commands in their current surface rather than memorize a universal list.</aside>
+        </section>
+
+        <section id="customization-ladder">
+          <h2 class="sr-only">The customization ladder</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-09.png" alt="Customization ladder from repository instructions to prompt files, skills, and custom agents." />
+            <figcaption class="sr-only">Start with instructions and add complexity only when repeated work justifies it.</figcaption>
+          </figure>
+          <aside class="notes">Explain the distinct role of each customization primitive and why instructions are the best starting point.</aside>
+        </section>
+
+        <section id="tools-mcp-hooks">
+          <h2 class="sr-only">Built-in tools, MCP, and deterministic hooks</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-10.png" alt="Comparison of built-in tools, Model Context Protocol tools, and deterministic hooks." />
+            <figcaption class="sr-only">MCP extends external capability while hooks provide guaranteed lifecycle checks and controls.</figcaption>
+          </figure>
+          <aside class="notes">Stress that fewer tools improve selection and reduce risk; capability is not the same as intelligence.</aside>
+        </section>
+
+        <section id="autonomy-dial">
+          <h2 class="sr-only">Autonomy is a dial</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-11.png" alt="Autonomy spectrum from exploration and planning to delegation and parallel isolated execution." />
+            <figcaption class="sr-only">As autonomy rises, task clarity, tests, permissions, and review must rise with it.</figcaption>
+          </figure>
+          <aside class="notes">Frame autonomy as a dial selected for the task, not a maturity ladder everyone must climb.</aside>
+        </section>
+
+        <section id="github-control-plane">
+          <h2 class="sr-only">GitHub is the control plane</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-12.png" alt="GitHub control plane showing issue, branch, tests, pull request, human review, and protected merge gates." />
+            <figcaption class="sr-only">Agentic work should pass through the same software delivery controls used for human contributors.</figcaption>
+          </figure>
+          <aside class="notes">Treat agent output as contributor output. Generated code still requires validation and accountable review.</aside>
+        </section>
+
+        <section id="spec-kit">
+          <h2 class="sr-only">Agentic Engineering with Spec Kit</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-13.png" alt="Spec Kit workflow from constitution and specification through plan, tasks, implementation, and convergence." />
+            <figcaption class="sr-only">Durable specification artifacts coordinate work that outlives a single prompt while preserving quality gates.</figcaption>
+          </figure>
+          <aside class="notes">Differentiate what and why in the specification from technology decisions in the plan.</aside>
+        </section>
+
+        <section id="next-actions">
+          <h2 class="sr-only">Your homework</h2>
+          <figure class="slide-frame">
+            <img src="./assets/slides/slide-14.png" alt="Closing slide with practical GitHub Copilot homework for new, regular, and advanced users." />
+            <figcaption class="sr-only">Better context beats a more expensive model, greater autonomy needs stronger controls, and users remain accountable.</figcaption>
+          </figure>
+          <aside class="notes">Ask each participant to choose one behavior to change after the session.</aside>
+        </section>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
